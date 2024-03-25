@@ -6,6 +6,8 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
+Genesis Martinez
+Author 1
 Tim Riedel
 Author 2
  
@@ -17,10 +19,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Learn how to display things (such as shapes, lines, text, and images) onto a portion of an HTML5 page called a “canvas”. 
  
 Known Issues:
-blah, blah, blah, blah
+No known issues
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -78,6 +80,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <title>Drawing Canvas</title>
 <style>
 
+	/* CSS styles for canvas container */
 	#canvas-container {
 		border: 2px solid black;
 		width: calc(100% - 20px);
@@ -86,12 +89,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		overflow: hidden;
 	}
 	
+	/* CSS styles for canvas */	
 	#canvas {
 		width: 100%;
 		height: auto;
 	}
 
-	
+	/* CSS styles for buttons */	
 	button {
 		display: block;
 		margin: 10px auto;
@@ -102,19 +106,20 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </head>
 <body>
 
+<!-- Container for the canvas -->
 <div id="canvas-container">
-
+	<!-- Canvas element -->
 	<canvas id="canvas" width="400" height="300"></canvas>
 </div>
 
-
+<!-- Buttons for drawing actions -->
 <button onclick="drawRectangle()">Draw Rectangle</button>
 <button onclick="drawName()">Draw Name</button>
 <button onclick="drawImage()">Draw Image</button>
 <button onclick="clearCanvas()">Clear Canvas</button>
 
 <script>
-    // Get the canvas element and its 2D rendering context
+    // Get canvas element and its 2D rendering context
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d'); 
 
