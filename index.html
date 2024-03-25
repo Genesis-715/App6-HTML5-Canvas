@@ -120,8 +120,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
     // Function to draw a rectangle on the canvas
     function drawRectangle() {
-	var c = document.getElementById("canvas");
-	var ctx = c.getContext("2d");
         // Set fill color
         ctx.fillStyle = 'blue';
         // Draw rectangle (x, y, width, height)
@@ -130,8 +128,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 // Function to draw my name on the canvas
     function drawName() {
-	var c = document.getElementById("canvas");
-	var ctx = c.getContext("2d");
         // Set fill color
         ctx.fillStyle = 'pink';
         // Set font style
@@ -150,7 +146,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
             ctx.drawImage(img, 50, 50, 100, 80);
         };
         // Set the source of the image
-        img.src = 'image.jpg'; // Path to image
+        img.src = 'https://i.bleacherreport.net/images/team_logos/328x328/texas_longhorns_football.png?canvas=492,328'; // Path to image
     }
 
 // Function to clear the canvas
