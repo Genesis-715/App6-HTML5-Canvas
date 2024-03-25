@@ -120,6 +120,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
     // Function to draw a rectangle on the canvas
     function drawRectangle() {
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
         // Set fill color
         ctx.fillStyle = 'blue';
         // Draw rectangle (x, y, width, height)
@@ -128,11 +130,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 // Function to draw my name on the canvas
     function drawName() {
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
         // Set fill color
         ctx.fillStyle = 'pink';
         // Set font style
         ctx.font = '20px Arial';
-        // Draw text (text, x, y)
+        // Draw text ("Genesis", x, y)
         ctx.fillText('Genesis', 50, 150);
     }
 
